@@ -4,7 +4,7 @@ import { showSoureCode } from "./showSourceCode";
 
 export const guncheck = async (url: string, input: string, output: string) => {
   const dlURL = url.split("/")[5];
-  //await dlfromDrive(dlURL);
+  await dlfromDrive(dlURL);
   const result = await checkresult(input, output);
   if (result === "ok") {
     console.log("ok");
@@ -20,7 +20,7 @@ export const guncheck = async (url: string, input: string, output: string) => {
 };
 
 guncheck(
-  "https://drive.google.com/file/d/1028YDqtwdSXhXkWvRtzxtmM87MgRK8tT/view?usp=drive_link",
+  "https://drive.google.com/file/d/12cn0zvfY-kAyFcxAxzKKQVvtteg9YJxt/view?usp=drive_link",
   "3 2 1 0",
   "7\n5\n4\n"
 );
